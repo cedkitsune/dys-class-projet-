@@ -1,0 +1,40 @@
+<main>
+    <div class="card">
+        <header>
+            <p> S'inscrire </p>
+        </header>
+
+        <section>
+            <article class="inscriptionform">
+
+                <label for="nom" class="block text-900 font-medium mb-2">Nom</label>
+                <input id="nom" type="text" pInputText class="w-full mb-3">
+
+                <label for="prenom" class="block text-900 font-medium mb-2">Prenom</label>
+                <input id="prenom" type="text" pInputText class="w-full mb-3">
+
+                <label for="email" class="block text-900 font-medium mb-2">Email</label>
+                <input id="email" type="email" pInputText class="w-full mb-3">
+
+                <label for="password" class="block text-900 font-medium mb-2">Mot de passe</label>
+                <input id="password" type="password" pInputText class="w-full mb-3">
+
+                <label for="passwordcontrol" class="block text-900 font-medium mb-2">Confirmée le Mot de passe
+                </label>
+                <input id="passwordcontrol" type="password" pInputText class="w-full mb-3">
+            </article>
+<!-- bouton valider et google  -->
+            <article class="btns">
+                <button id="btnins" pButton pRipple type="submit" class="p-button-raised">
+                    Valider</button>
+                    <section class="googlet">
+                <button id="btng" pButton pRipple type="submit" class="p-button-raised">
+                    Google <fa-icon [icon]="faGoogle"></fa-icon></button>
+                <p class="googletext">ou s'inscrire avec Google.</p>
+            </section>
+                <!-- enplacement du catpcha -->
+            </article>
+
+        </section>
+    </div>
+</main>

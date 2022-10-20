@@ -1,0 +1,37 @@
+<main>
+    <div class="card">
+        <header>
+            <p>Se connecter</p>
+        </header>
+        <article class="connexionform">
+            <section class="user">
+                <span id="usericon" class="p-input-icon-left">
+                    <i class="pi pi-user"></i>
+                    <input id="useri" type="text" pInputText class="w-full mb-3" placeholder="idendifiant">
+                </span>
+            </section>
+            <section class="mdp">
+                <span id="lock" class="p-input-icon-left">
+                    <i class="pi pi-lock"></i>
+                    <input id="mdpi" type="password" pInputText class="w-full mb-3" placeholder="Mots de passe">
+                </span>
+                <a routerLink="#" routerLinkActive="active" id="probleme" class="nav-link" aria-current="page">
+                    problème deconnexion</a>
+            </section>
+        </article>
+        <hr>
+        <article class="btns">
+            <button id="btnc" pButton pRipple type="submit" class="p-button-raised">
+                Se connecter<fa-icon [icon]="faRightToBracket"></fa-icon>
+            </button>
+
+            <button id="btng" pButton pRipple type="submit" class="p-button-raised">
+                Google<fa-icon [icon]="faGoogle"></fa-icon>
+            </button>
+        </article>
+
+        <footer>
+            <a routerLink="/inscription" id="login" class="nav-link" routerLinkActive="active">S'inscrire</a>
+        </footer>
+    </div>
+</main>
